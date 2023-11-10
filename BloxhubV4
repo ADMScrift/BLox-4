@@ -135,6 +135,31 @@ BloxTab:AddButton({
 
  	end    
  })
+
+BloxTab:AddButton({
+    Name = "Pado Hub",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+
+ 	end    
+ })
+
+ BloxTab:AddButton({
+    Name = "Fruit Hub",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+
+ 	end    
+ })
+ 
+ BloxTab:AddButton({
+    Name = "TP Chest",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GUXX0001/Hub/main/tpchestfix.lua"))()
+
+ 	end    
+ })
+ 
  
 
 
