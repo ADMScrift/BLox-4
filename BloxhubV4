@@ -159,7 +159,8 @@ BloxTab:AddButton({
 
  	end    
  })
- 
+
+Tab:AddLabel("©️Account Deleted")
  
 
 
