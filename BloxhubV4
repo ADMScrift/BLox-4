@@ -160,8 +160,19 @@ BloxTab:AddButton({
  	end    
  })
 
-Tab:AddLabel("©️Account Deleted")
+ FPSTab:AddButton({
+    Name = "Rejoin",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Rejoin/main/rejoin"))()
+
+ 	end    
+ })
+
+
+BloxTab:AddLabel("©️Account Deleted")
+FPSTab:AddLabel("©️Account Deleted")
  
+
 
 
 
