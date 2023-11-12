@@ -178,7 +178,7 @@ BloxTab:AddButton({
 
 
  local BladeTab = Window:MakeTab({
-	Name = "Blade",
+	Name = "Blade Ball",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -201,9 +201,4 @@ BladeTab:AddButton({
 
 BloxTab:AddLabel("©️Account Deleted")
 FPSTab:AddLabel("©️Account Deleted")
- 
-
-
-
-
-
+BladeTab:AddLabel("©️Account Deleted")
