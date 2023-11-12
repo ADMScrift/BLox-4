@@ -168,6 +168,17 @@ BloxTab:AddButton({
  	end    
  })
 
+ BloxTab:AddButton({
+    Name = "Ant AFK",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+        loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+
+ 	end    
+ })
+
+
+
+
 
 BloxTab:AddLabel("©️Account Deleted")
 FPSTab:AddLabel("©️Account Deleted")
