@@ -3,13 +3,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "🌟Star Hub🌟", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---BLox Fruit
-
-
-local Section = BloxTab:AddSection({
-  Name = "Hub(s)"
-})
- 
 local BloxTab = Window:MakeTab({
 	Name = "Blox",
 	Icon = "rbxassetid://4483345998",
@@ -184,35 +177,14 @@ BloxTab:AddButton({
  })
 
 
---Blade Ball⬇️⬇️⬇️
-
-local BladeTab = Window:MakeTab({
-	Name = "Blade Ball",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = BladeTab:AddSection({
-  Name = "Combat"
-})
-
-BladeTab:AddButton({
-  Name = "Auto Parry",
-  Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-    end
-})
-
-BladeTab:AddButton({
-  Name = "Auto spam",
-  Callback = function()
-         loadstring(game:HttpGet('https://pastebin.com/raw/KB4xQe4j'))()
-    end
-})
 
 
 
-BladeTab:AddLabel("©️Account Deleted")
 BloxTab:AddLabel("©️Account Deleted")
 FPSTab:AddLabel("©️Account Deleted")
  
+
+
+
+
+
