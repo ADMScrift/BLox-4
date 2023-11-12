@@ -177,8 +177,33 @@ BloxTab:AddButton({
  })
 
 
+ local BladeTab = Window:MakeTab({
+	Name = "Blade",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+BladeTab:AddButton({
+    Name = "Auto Parry",
+    Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+      end
+})
+
+BladeTab:AddButton({
+    Name = "Auto Spam",
+    Callback = function()
+           loadstring(game:HttpGet('https://pastebin.com/raw/KB4xQe4j'))()
+      end
+})
 
 
 
 BloxTab:AddLabel("©️Account Deleted")
 FPSTab:AddLabel("©️Account Deleted")
+ 
+
+
+
+
+
