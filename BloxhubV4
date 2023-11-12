@@ -3,6 +3,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "🌟Star Hub🌟", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+--BLox Fruit
+
+
+local Section = BloxTab:AddSection({
+  Name = "Hub(s)"
+})
+ 
 local BloxTab = Window:MakeTab({
 	Name = "Blox",
 	Icon = "rbxassetid://4483345998",
@@ -10,11 +17,21 @@ local BloxTab = Window:MakeTab({
 })
 
 OrionLib:MakeNotification({
-	Name = "Bem vindo!",
-	Content = "Lista ugc Script",
+	Name = "Seja Bem Vindo",
+	Content = "Lista de Scripts",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+
+OrionLib:MakeNotification({
+	Name = "Você é um:",
+	Content = "Membro",
+	Image = "rbxassetid://4483345998",
+	Time = 8
+})
+
+
+
 
 BloxTab:AddButton({
 	Name = "Fai-Fao",
@@ -177,28 +194,36 @@ BloxTab:AddButton({
  })
 
 
- local BladeTab = Window:MakeTab({
+--Blade Ball⬇️⬇️⬇️
+
+local BladeTab = Window:MakeTab({
 	Name = "Blade Ball",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-BladeTab:AddButton({
-    Name = "Auto Parry",
-    Callback = function()
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-      end
+local Section = BladeTab:AddSection({
+  Name = "Combat"
 })
 
 BladeTab:AddButton({
-    Name = "Auto Spam",
-    Callback = function()
-           loadstring(game:HttpGet('https://pastebin.com/raw/KB4xQe4j'))()
-      end
+  Name = "Auto Parry",
+  Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+    end
+})
+
+BladeTab:AddButton({
+  Name = "Auto spam",
+  Callback = function()
+         loadstring(game:HttpGet('https://pastebin.com/raw/KB4xQe4j'))()
+    end
 })
 
 
 
+
+BladeTab:AddLabel("©️Account Deleted")
 BloxTab:AddLabel("©️Account Deleted")
 FPSTab:AddLabel("©️Account Deleted")
-BladeTab:AddLabel("©️Account Deleted")
+ 
