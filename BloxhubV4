@@ -3,12 +3,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "🌟Star Hub🌟", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---BLox Fruit
-
-
-local Section = BloxTab:AddSection({
-  Name = "Hub(s)"
-})
  
 local BloxTab = Window:MakeTab({
 	Name = "Blox",
