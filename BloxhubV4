@@ -2,13 +2,19 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 
 local Window = OrionLib:MakeWindow({Name = "🌟Star Hub🌟", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--BLox Fruit
+
+
+local Section = BloxTab:AddSection({
+  Name = "Hub(s)"
+})
  
 local BloxTab = Window:MakeTab({
 	Name = "Blox",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
 
 
 BloxTab:AddButton({
@@ -27,14 +33,14 @@ BloxTab:AddButton({
 
 BloxTab:AddButton({
 	Name = "LS Zee Hub",
-	Callback = function() 
+	Callback = function()  ----script logo abaixo⬇️⬇️⬇️-----
         loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()
     end    
 })
 
 BloxTab:AddButton({
     Name = "MTriet Hub",
-    Callback = function() 
+    Callback = function()  ----script logo abaixo⬇️⬇️⬇️-----
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
     end    
 })
@@ -60,12 +66,32 @@ FPSTab:AddButton({
 BloxTab:AddButton({
 	Name = "HOHO",
 	Callback = function()  ----script logo abaixo⬇️⬇️⬇️-----
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
     end    
 })
 
+FPSTab:AddButton({
+    Name = "Mostrar Fps",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/FPS-Counter'))()
 
+ 	end    
+ })
 
+ 
+ FPSTab:AddButton({
+    Name = "Remover FOG",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+		repeat task.wait() until game:IsLoaded()
+    wait(5) -- extra load to ensure the script is working
+    for i,v in pairs(game.Lighting:GetChildren()) do
+	if v:IsA("") or v:IsA("Sky") or v:IsA("BlurEffect") or v:IsA("BloomEffect") or v:IsA("SunRaysEffect") then
+	v:Destroy()
+	end
+	end
+
+    end    
+})
 
 
 BloxTab:AddButton({
@@ -143,13 +169,30 @@ BloxTab:AddButton({
  	end    
  })
 
- BloxTab:AddButton({
+ FPSTab:AddButton({
     Name = "Ant AFK",
     Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
         loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
 
  	end    
  })
+
+
+ FPSTab:AddButton({
+    Name = "Remover FOG",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+		repeat task.wait() until game:IsLoaded()
+    wait(5) -- extra load to ensure the script is working
+    for i,v in pairs(game.Lighting:GetChildren()) do
+	if v:IsA("") or v:IsA("Sky") or v:IsA("BlurEffect") or v:IsA("BloomEffect") or v:IsA("SunRaysEffect") then
+	v:Destroy()
+	end
+	end
+
+    end    
+})
+
+
 
 
 
