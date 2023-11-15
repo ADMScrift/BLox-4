@@ -1,27 +1,27 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "ERROR", HidePremium = false, SaveConfig = true, ConfigFolder = "ERROR"})
+local Window = OrionLib:MakeWindow({Name = "🔴ERROR🔴", HidePremium = false, SaveConfig = true, ConfigFolder = "ERROR"})
 
 
 OrionLib:MakeNotification({
-	Name = "ERROR!",
-	Content = "ERROR",
+	Name = "🔴ERROR!🔴",
+	Content = "🔴ERROR🔴",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
 local ERRORTab = Window:MakeTab({
-	Name = "ERROR",
+	Name = "🔴ERROR🔴",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-ERRORTab:AddLabel("SCRIPT FOI DESATIVADO, SE QUISER UTILIZA-LO, ")
-ERRORTab:AddLabel("CONTATE O CRIADOR DO SCRIPT")
+ERRORTab:AddLabel("🔴SCRIPT FOI DESATIVADO, SE QUISER UTILIZA-LO, ")
+ERRORTab:AddLabel("CONTATE O CRIADOR DO SCRIPT🔴")
 
 ERRORTab:AddButton({
-    Name = "FECHAR",
+    Name = "🔴FECHAR🔴",
     Callback = function()  
         OrionLib:Destroy()
     end    
