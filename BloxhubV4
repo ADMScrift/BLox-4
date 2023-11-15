@@ -16,13 +16,6 @@ local BloxTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-OrionLib:MakeNotification({
-	Name = "Seja Bem Vindo",
-	Content = "Lista de Scripts",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
 
 BloxTab:AddButton({
 	Name = "Fai-Fao",
@@ -183,6 +176,10 @@ BloxTab:AddButton({
 
  	end    
  })
+
+
+
+
 
 
 
