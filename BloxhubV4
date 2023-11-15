@@ -23,15 +23,6 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-OrionLib:MakeNotification({
-	Name = "Você é um:",
-	Content = "Membro",
-	Image = "rbxassetid://4483345998",
-	Time = 8
-})
-
-
-
 
 BloxTab:AddButton({
 	Name = "Fai-Fao",
@@ -82,7 +73,7 @@ FPSTab:AddButton({
 BloxTab:AddButton({
 	Name = "HOHO",
 	Callback = function()  ----script logo abaixo⬇️⬇️⬇️-----
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
     end    
 })
 
