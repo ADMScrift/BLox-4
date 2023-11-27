@@ -1,157 +1,29 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "🌟Star Hub🌟", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
- 
-local BloxTab = Window:MakeTab({
-	Name = "Blox",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Window = OrionLib:MakeWindow({Name = "ERROR", HidePremium = false, SaveConfig = true, ConfigFolder = "ERROR", IntroIcon = "rbxassetid://15370100403"})
+
+
+OrionLib:MakeNotification({
+    Name = "ERROR!",
+    Content = "ERROR",
+    Image = "rbxassetid://4483345998",
+    Time = 5
 })
 
-
-
-BloxTab:AddButton({
-	Name = "Fai-Fao",
-	Callback = function()
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua")()
-  	end    
+local ERRORTab = Window:MakeTab({
+    Name = "ERROR",
+    Icon = "rbxassetid://15370100403",
+    PremiumOnly = false
 })
 
-BloxTab:AddButton({
-	Name = "Tsuoscripts",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
-  	end    
-})
+ERRORTab:AddLabel("SCRIPT FOI DESATIVADO, SE QUISER UTILIZA-LO, ")
+ERRORTab:AddLabel("CONTATE O CRIADOR DO SCRIPT")
+ERRORTab:AddLabel("         ")
 
-BloxTab:AddButton({
-	Name = "LS Zee Hub",
-	Callback = function() 
-        loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()
+ERRORTab:AddButton({
+    Name = "FECHAR",
+    Callback = function()  
+        OrionLib:Destroy()
     end    
 })
-
-BloxTab:AddButton({
-    Name = "MTriet Hub",
-    Callback = function() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
-    end    
-})
-
-
-local FPSTab = Window:MakeTab({
-	Name = "Fps",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-FPSTab:AddButton({
-    Name = "Remover Textura",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-        for i,v in next, (workspace:GetDescendants()) do
-            if v:IsA("Part") then v.Material = Enum.Material.SmoothPlastic
-            end
-            end
-    end    
-})
-
-BloxTab:AddButton({
-	Name = "HOHO",
-	Callback = function()  ----script logo abaixo⬇️⬇️⬇️-----
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-    end    
-})
-
-
-
-
-
-BloxTab:AddButton({
-    Name = "Domadic Hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
-
- 	end    
- })
-
- 
- BloxTab:AddButton({
-    Name = "Uranium hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
-
- 	end    
- })
-
- BloxTab:AddButton({
-    Name = "ThunderZ Hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThunderZ-05/HUB/main/TestKey')))()
-
- 	end    
- })
-
- 
- BloxTab:AddButton({
-    Name = "Zamex Hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexHub/main/Zamex_PC.lua'))()
-
- 	end    
- })
-
- 
- BloxTab:AddButton({
-    Name = "Kaitun hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaqueHub/BloxFruitPC/05507b61c0092197a3b6233ca305f2dfacd20050/KaitunZaque.lua'))()
-
- 	end    
- })
-
-BloxTab:AddButton({
-    Name = "Pado Hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
-
- 	end    
- })
-
- BloxTab:AddButton({
-    Name = "Fruit Hub",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
-
- 	end    
- })
- 
- BloxTab:AddButton({
-    Name = "TP Chest",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GUXX0001/Hub/main/tpchestfix.lua"))()
-
- 	end    
- })
-
- FPSTab:AddButton({
-    Name = "Rejoin",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/FPS/main/rejoin"))()
-
- 	end    
- })
-
- BloxTab:AddButton({
-    Name = "Ant AFK",
-    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
-        loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
-
- 	end    
- })
-
-
-
-BloxTab:AddLabel("©️Account Deleted")
-FPSTab:AddLabel("©️Account Deleted")
