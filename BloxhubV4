@@ -5,8 +5,8 @@ local Window = OrionLib:MakeWindow({Name = "ERROR", HidePremium = false, SaveCon
 
 
 OrionLib:MakeNotification({
-    Name = "ERROR!",
-    Content = "ERROR",
+    Name = "AVISO!",
+    Content = "Está versão foi desativada",
     Image = "rbxassetid://4483345998",
     Time = 5
 })
@@ -17,8 +17,8 @@ local ERRORTab = Window:MakeTab({
     PremiumOnly = false
 })
 
-ERRORTab:AddLabel("SCRIPT FOI DESATIVADO, SE QUISER UTILIZA-LO, ")
-ERRORTab:AddLabel("CONTATE O CRIADOR DO SCRIPT")
+ERRORTab:AddLabel("Está versão foi desativada ")
+ERRORTab:AddLabel("Atualização no server")
 ERRORTab:AddLabel("         ")
 
 ERRORTab:AddButton({
