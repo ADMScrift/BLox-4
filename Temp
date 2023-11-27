@@ -1,0 +1,174 @@
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/BLox-4/main/BloxhubV5"))()
+
+
+--Load
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+--Window
+local Window = Rayfield:CreateWindow({
+    Name = "🍏Blox Fruit🍏",
+    LoadingTitle = "Deleted Account",
+    LoadingSubtitle = "by Deleted",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+    Discord = {
+       Enabled = True,
+       Invite = "https://discord.gg/MYH3uxzz7m", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Blox",
+       Subtitle = "Key System",
+       Note = "Version 1",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Blox"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+
+ local HubsTab = Window:CreateTab("Hubs", 4483362458) -- Title, Image
+
+
+ local FPSTab = Window:CreateTab("FPS", 4483362458) -- Title, Image
+
+ Rayfield:Notify({
+    Title = "Olá",
+    Content = "Este Hub tem varios scripts de Blox Fruit",
+    Duration = 6.5,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+
+
+
+ local Button = HubsTab:CreateButton({
+    Name = "Fai Fao",
+    Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua")()
+    end,
+ })
+
+
+ local Button = HubsTab:CreateButton({
+    Name = "Tsuoscripts",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "LS Zee Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "MTriet Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "HOHO HUB",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Domadic Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Uranium hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "ThunderZ Hub",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/ThunderZ-05/HUB/main/TestKey')))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Zamex Hub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexHub/main/Zamex_PC.lua'))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Kaitun hub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ZaqueHub/BloxFruitPC/05507b61c0092197a3b6233ca305f2dfacd20050/KaitunZaque.lua'))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Pado Hub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Fruit Hub",
+    Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "TP Chest",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GUXX0001/Hub/main/tpchestfix.lua"))()
+    end,
+ })
+
+
+
+ local Button = FPSTab:CreateButton({
+    Name = "Remover Textura",
+    Callback = function()
+        for i,v in next, (workspace:GetDescendants()) do
+            if v:IsA("Part") then v.Material = Enum.Material.SmoothPlastic
+            end
+            end
+    end,
+ })
+
+ local Button = FPSTab:CreateButton({
+    Name = "Rejoin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/FPS/main/rejoin"))()
+    end,
+ })
+
+ local Button = FPSTab:CreateButton({
+    Name = "Ant AFK",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/SZkHcmKR"))()
+    end,
+ })
+
+
